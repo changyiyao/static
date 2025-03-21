@@ -1,3 +1,4 @@
-host-suffix,public.dns.iij,Microsoft
-host-suffix,api.ip.sb,Microsoft
-host-suffix,Ipsnmedia.net,Microsot
+rules:
+  - DOMAIN-SUFFIX,public.dns.iij,Microsoft
+  - DOMAIN-SUFFIX,api.ip.sb,Microsoft
+  - DOMAIN-SUFFIX,Ipsnmedia.net,Microsot
