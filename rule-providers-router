@@ -1,7 +1,7 @@
 # 特别处理
   - DOMAIN-SUFFIX,public.dns.iij,Microsoft
   - DOMAIN-SUFFIX,api.ip.sb,Microsoft
-  - DOMAIN-SUFFIX,Ipsnmedia.net,Microsot
+  - DOMAIN-SUFFIX,Ipsnmedia.net,Microsoft
   - DOMAIN-SUFFIX,dl.google.com,Proxy
 
 # Copied from https://github.com/dler-io/Rules/blob/main/Clash/Rule.yaml
