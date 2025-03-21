@@ -1,0 +1,13 @@
+rule-providers:
+  Microsoft:
+    type: http
+    behavior: domain
+    url: "https://github.com/xxx/raw/master/MyProxy.yaml"
+    path: ./ruleset/myproxy.yaml
+    interval: 3600
+  mydirect:
+    type: http
+    behavior: domain
+    url: "https://github.com/xxx/Profiles/raw/master/MyDirect.yaml"
+    path: ./ruleset/mydirect.yaml
+    interval: 3600 
