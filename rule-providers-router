@@ -1,5 +1,10 @@
-# Copied from https://github.com/dler-io/Rules/blob/main/Clash/Rule.yaml
+# 特别处理
+  - DOMAIN-SUFFIX,public.dns.iij,Microsoft
+  - DOMAIN-SUFFIX,api.ip.sb,Microsoft
+  - DOMAIN-SUFFIX,Ipsnmedia.net,Microsot
+  - DOMAIN-SUFFIX,dl.google.com,Proxy
 
+# Copied from https://github.com/dler-io/Rules/blob/main/Clash/Rule.yaml
   - RULE-SET,AdBlock,AdBlock
   - RULE-SET,HTTPDNS,HTTPDNS
   - RULE-SET,Special,DIRECT
