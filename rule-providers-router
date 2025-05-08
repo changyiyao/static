@@ -10,7 +10,7 @@
   - RULE-SET,Special,DIRECT
 
   - RULE-SET,Netflix,Netflix
-  - RULE-SET,Disney Plus,Disney
+  - RULE-SET,Disney Plus,Disney Plus
   - RULE-SET,YouTube,YouTube
 #   - RULE-SET,YouTube Music,YouTube
   - RULE-SET,Max,Max
@@ -27,6 +27,7 @@
 
   - RULE-SET,Abema TV,Asian TV
   - RULE-SET,Bahamut,Asian TV
+  - RULE-SET,DMM,Asian TV
   - RULE-SET,Fox+,Asian TV
   - RULE-SET,Hulu Japan,Asian TV
   - RULE-SET,Japonx,Asian TV
@@ -53,12 +54,6 @@
   - RULE-SET,Pornhub,Global TV
   - RULE-SET,Soundcloud,Global TV
 
-  - RULE-SET,Apple Music,Apple TV
-  - RULE-SET,Apple News,Apple TV
-  - RULE-SET,Apple TV,Apple TV
-
-  - RULE-SET,Apple,Apple
-
   - RULE-SET,Telegram,Telegram
 
   - RULE-SET,Crypto,Crypto
@@ -70,6 +65,13 @@
   - RULE-SET,Scholar,Scholar
   - RULE-SET,Speedtest,Speedtest
   - RULE-SET,Steam,Steam
+  - RULE-SET,TikTok,TikTok
+
+  - RULE-SET,Apple Music,Apple TV
+  - RULE-SET,Apple News,Apple TV
+  - RULE-SET,Apple TV,Apple TV
+
+  - RULE-SET,Apple,Apple
 
   - RULE-SET,miHoYo,miHoYo
 
@@ -90,7 +92,7 @@ script:
             'HTTPDNS': 'HTTPDNS',
             'Special': 'DIRECT',
             'Netflix': 'Netflix',
-            'Disney Plus': 'Disney',
+            'Disney Plus': 'Disney Plus',
             'YouTube': 'YouTube',
             'Max': 'Max',
             'Spotify': 'Spotify',
@@ -104,6 +106,7 @@ script:
             'WeTV': 'CN Mainland TV',
             'Abema TV': 'Asian TV',
             'Bahamut': 'Asian TV',
+            'DMM': 'Asian TV',
             'Fox+': 'Asian TV',
             'Hulu Japan': 'Asian TV',
             'Japonx': 'Asian TV',
@@ -141,6 +144,7 @@ script:
             'Scholar': 'Scholar',
             'Speedtest': 'Speedtest',
             'Steam': 'Steam',
+            'TikTok': 'TikTok',
             'miHoYo': 'miHoYo',
             'PROXY': 'Proxy',
             'Domestic': 'Domestic',
@@ -368,6 +372,12 @@ rule-providers:
     url: 'https://testingcf.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/Media/Disney%20Plus.yaml'
     path: ./Rules/Media/Disney_Plus
     interval: 86400
+  DMM:
+    type: http
+    behavior: classical
+    url: 'https://testingcf.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/Media/DMM.yaml'
+    path: ./Rules/Media/DMM
+    interval: 86400
   encoreTVB:
     type: http
     behavior: classical
@@ -499,6 +509,12 @@ rule-providers:
     behavior: classical
     url: 'https://testingcf.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/Steam.yaml'
     path: ./Rules/Steam
+    interval: 86400
+  TikTok:
+    type: http
+    behavior: classical
+    url: 'https://testingcf.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/TikTok.yaml'
+    path: ./Rules/TikTok
     interval: 86400
   Speedtest:
     type: http
